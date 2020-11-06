@@ -48,7 +48,7 @@ body {
         flex-direction: column;
         align-items: center;
         height: 511.13px;
-        width: 95%;
+        min-width: 288px;
         margin: 5px;
     }
 

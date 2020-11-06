@@ -27,19 +27,19 @@ function Card(props) {
     } = props;
 
     const renderStatus = () => {
-        if (status == STATUS_RUNNING) {
+        if (status === STATUS_RUNNING) {
             return (
                 <div className="status running">
                     <span>Running</span>
                 </div>
             );
-        } else if (status == STATUS_PAUSED) {
+        } else if (status === STATUS_PAUSED) {
             return (
                 <div className="status paused">
                     <span>Paused</span>
                 </div>
             );
-        } else if (status == STATUS_STOPPED) {
+        } else if (status === STATUS_STOPPED) {
             return (
                 <div className="status stopped">
                     <span>Stopped</span>
@@ -97,15 +97,15 @@ function Card(props) {
                     </div>
                     <div className="budget end">
                         <h3>Budget</h3>
-                        <span>{budgetTotal ? `\$${budgetTotal}` : "–"}</span>
+                        <span>{budgetTotal ? `$${budgetTotal}` : "–"}</span>
                     </div>
                     <div className="spent">
                         <h3>Spent</h3>
-                        <span>{budgetSpent ? `\$${budgetSpent}` : "–"}</span>
+                        <span>{budgetSpent ? `$${budgetSpent}` : "–"}</span>
                     </div>
                     <div className="cpm">
                         <h3>Average CPM </h3>
-                        <span>{averageCPM ? `\$${averageCPM}` : "–"}</span>
+                        <span>{averageCPM ? `$${averageCPM}` : "–"}</span>
                     </div>
                     <div className="vcr end">
                         <h3>Current VCR</h3>
