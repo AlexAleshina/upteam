@@ -35,3 +35,4 @@ export const LoadedStoped = () => <Card {...loadedProps} status={STATUS_STOPPED}
 export const NoDataRunning = () => <Card {...unloadedProps} status={STATUS_RUNNING} />
 export const NoDataPaused = () => <Card {...unloadedProps} status={STATUS_PAUSED} />
 export const NoDataStopped = () => <Card {...unloadedProps} status={STATUS_STOPPED} />
+export const Container = () => <div className="container"><Card {...loadedProps} status={STATUS_RUNNING} /><Card {...unloadedProps} status={STATUS_STOPPED} /><Card {...loadedProps} status={STATUS_PAUSED} /><Card {...loadedProps} status={STATUS_RUNNING} /><Card {...loadedProps} status={STATUS_RUNNING} /></div>

@@ -49,7 +49,7 @@ body {
         align-items: center;
         height: 511.13px;
         min-width: 288px;
-        margin: 5px;
+        margin: 8px;
     }
 
     .card>.img {
@@ -57,13 +57,23 @@ body {
     }
 }
 
-@media screen and (min-width: 330px) and (max-width: 1388px) {
+@media screen and (min-width: 330px) and (max-width: 768px) {
+    .card {
+        flex-direction: column;
+        align-items: center;
+        height: 511.13px;
+        min-width: 343px;
+        margin: 8px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1388px) {
     .card {
         flex-direction: column;
         align-items: center;
         height: 511.13px;
         width: 343px;
-        margin: 10px 5px;
+        margin: 16px;
     }
 }
 
@@ -72,18 +82,14 @@ body {
         margin: 1em;
         max-height: 135px;
     }
-
-    .card:first-child {
-        margin-top: 30px;
-    }
 }
 
 
 /* Image */
 @media screen and (max-width: 330px) {
     .img>img {
-        Width: 262px;
-        Height: 185px;
+        width: 262px;
+        height: 185px;
         border-radius: 8px;
     }
 
@@ -98,8 +104,8 @@ body {
     }
 
     .img>img {
-        Width: 311px;
-        Height: 186px;
+        width: 311px;
+        height: 186px;
         border-radius: 8px;
     }
 }
@@ -125,7 +131,7 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 5px;
+        margin-top: 4px;
     }
 }
 
@@ -134,7 +140,7 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 10px;
+        margin-top: 8px;
     }
 }
 
@@ -232,22 +238,22 @@ h3 {
 
 @media screen and (max-width: 330px) {
     .nav {
-        width: 45px;
-        margin-bottom: 8px;
+        width: 10%;
+        margin: 0px 0px 8px 4px;
     }
 
-    .nav>a>h2 {
+    .navTitle {
         display: none;
     }
 }
 
 @media screen and (min-width: 330px) and (max-width: 1388px) {
     .nav {
-        width: 50px;
-        margin-bottom: 10px;
+        min-width: 12%;
+        margin-bottom: 8px;
     }
 
-    .nav>a>h2 {
+    .navTitle {
         display: none;
     }
 }
@@ -257,14 +263,14 @@ h3 {
         width: 120px;
     }
 
-    .nav>a {
+    .navLink {
         display: flex;
         align-items: center;
         text-decoration: none;
     }
 
-    .nav>a>h2 {
-        margin-right: 10px;
+    .navTitle {
+        margin-right: 8px;
     }
 }
 
@@ -277,22 +283,22 @@ h3 {
     justify-content: space-between;
 }
 
-.props>div {
+.propsItem {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 47px;
+    height: 42px;
 }
 
-.props>div>span {
+.propsItem>span {
     color: rgba(0, 0, 0, 0.87);
 }
 
-.props>div>div>span {
+.propsItem>div>span {
     color: rgba(0, 0, 0, 0.87);
 }
 
-.props>div>h3 {
+.propsItem>h3 {
     color: rgba(0, 0, 0, 0.6);
 }
 
@@ -300,22 +306,23 @@ h3 {
     .props {
         flex-wrap: wrap;
         align-items: center;
-        margin: 0px 9px;
+        margin: 0px 8px;
     }
 
-    .props>div {
-        margin: 8px 3px;
+    .propsItem {
+        margin: 8px 4px;
+        min-width: 24%;
     }
 
-    .props>div>span {
+    .propsItem>span {
         font-size: 12px;
     }
 
-    .props>div>div>span {
+    .propsItem>div>span {
         font-size: 13px;
     }
 
-    .props>div>h3 {
+    .propsItem>h3 {
         font-size: 11px;
         line-height: 15px;
         letter-spacing: 0.3px;
@@ -323,11 +330,7 @@ h3 {
 
     .props>.compaignDates {
         margin-right: auto;
-        width: 67%;
-    }
-
-    .props>.spent {
-        margin-right: 30px;
+        min-width: 60%;
     }
 }
 
@@ -335,25 +338,27 @@ h3 {
     .props {
         flex-wrap: wrap;
         align-items: center;
-        margin: 0px 10px;
+        margin: 0px 8px;
     }
 
-    .props>div {
-        margin: 10px;
+    .propsItem {
+        margin: 8px 4px;
+        min-width: 24%;
     }
 
-    .props>div>span {
+    .propsItem>span {
         font-size: 14px;
     }
 
-    .props>div>h3 {
+    .propsItem>h3 {
         font-size: 11px;
         line-height: 18px;
         letter-spacing: 0.4px;
     }
 
-    .props>.spent {
-        margin-right: 50px;
+    .props>.compaignDates {
+        margin-right: auto;
+        min-width: 60%;
     }
 }
 
@@ -364,7 +369,7 @@ h3 {
         margin: 12px 16px 4px 0;
     }
 
-    .props>div {
+    .propsItem {
         margin: 10px;
     }
 
@@ -373,17 +378,17 @@ h3 {
         margin-left: 0;
     }
 
-    .props>div>span {
+    .propsItem>span {
         font-size: 14px;
         letter-spacing: 0.25px;
     }
 
-    .props>div>div>span {
+    .propsItem>div>span {
         font-size: 14px;
         letter-spacing: 0.25px;
     }
 
-    .props>div>h3 {
+    .propsItem>h3 {
         font-size: 12px;
     }
 }
@@ -418,6 +423,7 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 8px 4px;
 }
 
 .compamyProps>.status>span {
@@ -473,19 +479,19 @@ h3 {
     border: none;
     width: 100%;
     border-bottom: 1px solid rgba(106, 143, 184, 0.6);
-    margin-top: 5px;
+    margin-top: 4px;
     opacity: 0.2;
 }
 
 @media screen and (max-width: 330px) {
     .border {
-        margin-bottom: 7px;
+        margin-bottom: 8px;
     }
 }
 
 @media screen and (min-width: 330px) and (max-width: 1388px) {
     .border {
-        margin-top: 5px;
+        margin-top: 4px;
         margin-bottom: 0;
     }
 }
@@ -498,13 +504,7 @@ h3 {
 
 
 /* flex-end */
-@media screen and (max-width: 330px) {
-    .end {
-        align-items: flex-end;
-    }
-}
-
-@media screen and (min-width: 330px) and (max-width: 1388px) {
+@media screen and (max-width: 1388px) {
     .end {
         align-items: flex-end;
     }
@@ -515,7 +515,7 @@ h3 {
 
 @media screen and (max-width: 330px) {
     .nameOfCompany {
-        width: 75%;
+        max-width: 85%;
         overflow: hidden;
         margin-right: auto;
         margin-bottom: 10px;
@@ -528,10 +528,10 @@ h3 {
 
 @media screen and (min-width: 330px) and (max-width: 1388px) {
     .nameOfCompany {
-        width: 75%;
+        min-width: 70%;
         overflow: hidden;
         margin-right: auto;
-        margin-bottom: 10px;
+        margin-bottom: 8px;
     }
 
     .nameOfCompany>span {
@@ -541,7 +541,7 @@ h3 {
 
 @media screen and (min-width: 1388px) {
     .nameOfCompany {
-        width: 313px;
+        min-width: 313px;
         height: 24px;
         font-size: 18px;
         line-height: 24px;

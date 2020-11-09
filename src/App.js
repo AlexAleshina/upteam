@@ -14,9 +14,9 @@ function App() {
         budgetSpent: 500,
         averageCPM: 55,
         currentVCR: 20,
-        uniqueReach: 10000,
+        uniqueReach: 36000,
         frequency: 6,
-        totalImpressions: 5000
+        totalImpressions: 25000
     }
     return (
         <div className="App" >

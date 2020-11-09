@@ -67,8 +67,8 @@ function Card(props) {
                         <span>{nameOfCompany ?? "–"}</span>
                     </div>
                     <div className="nav">
-                        <a href="#">
-                            <h2>Report</h2>
+                        <a href="#" className="navLink">
+                            <h2 className="navTitle">Report</h2>
                             <div className="reportIcon">
                                 <img src={report} alt="report" />
                             </div>
@@ -86,46 +86,46 @@ function Card(props) {
 
                 <div className="props">
                     {renderStatus()}
-                    <div className="advert end">
+                    <div className="advert end propsItem">
                         <h3>Advertiser</h3>
                         <span>{advertiser ?? "–"}</span>
                     </div>
                     <hr className="border"></hr>
-                    <div className="compaignDates">
+                    <div className="compaignDates propsItem">
                         <h3>Campaign dates (7 days left)</h3>
                         <span>{compaignDates ?? "–"}</span>
                     </div>
-                    <div className="budget end">
+                    <div className="budget end propsItem">
                         <h3>Budget</h3>
                         <span>{budgetTotal ? `$${budgetTotal}` : "–"}</span>
                     </div>
-                    <div className="spent">
+                    <div className="spent propsItem">
                         <h3>Spent</h3>
                         <span>{budgetSpent ? `$${budgetSpent}` : "–"}</span>
                     </div>
-                    <div className="cpm">
+                    <div className="cpm propsItem">
                         <h3>Average CPM </h3>
                         <span>{averageCPM ? `$${averageCPM}` : "–"}</span>
                     </div>
-                    <div className="vcr end">
+                    <div className="vcr end propsItem">
                         <h3>Current VCR</h3>
                         <div>
                             <span>{currentVCR ? `${currentVCR}%` : "–"}</span>
                             <img src={currentVCR ? `${vcr}` : " "} alt="" />
                         </div>
                     </div>
-                    <div className="uniq">
+                    <div className="uniq propsItem">
                         <h3>Unique reach</h3>
                         <div>
                             <span>{uniqueReach ?? "–"}</span>
                             <img src={uniqueReach ? `${impression}` : " "} alt="" />
                         </div>
                     </div>
-                    <div className="frequency">
+                    <div className="frequency propsItem">
                         <h3>Frequency</h3>
                         <span>{frequency ?? "–"}</span>
                     </div>
-                    <div className="impressions end">
+                    <div className="impressions end propsItem">
                         <h3>Total Impressions</h3>
                         <div>
                             <span>{totalImpressions ?? "–"}</span>
